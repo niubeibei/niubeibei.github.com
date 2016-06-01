@@ -1,0 +1,74 @@
+html{
+	font-size: 62.5%;
+}
+body{
+	font-size:1.4rem ;
+	margin-bottom: 30px;
+}
+h3{
+	font-size: 2rem;
+	font-family: simhei;
+	font-weight: bold;
+}
+.jumbotron{
+	width: 100%;
+	padding: 0;margin: 0;
+	background: url(../img/jumbotron1.jpg) no-repeat;
+	background-size: 170%;
+}
+.jumbotronImg{
+	position:absolute;
+	opacity: 0.2;
+	-moz-opacity: 0.2;
+	-webkit-opacity: 0.2;
+	filter:"alpha(opacity=20)";
+    -ms-filter:"alpha(opacity=20)"; /* 旧版IE */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.userMessageDiv{
+	padding-top: 10%;
+	width: 100%;
+	text-align: center;
+	font-size: 1.4rem;
+}
+
+.userPhoto{
+	width: 7rem;
+	height: 7rem;
+}
+.userMessageText{
+	margin-top: 5px;
+}
+.toBottomDiv{
+	margin-top: 7%;text-align: center;
+}
+.toBottom{
+	-moz-border-radius: 8px 8px 0px 0px;
+	border-radius: 8px 8px 0px 0px;
+	padding:5px 30px;box-shadow:0;
+	background-color: #00CFBD;
+	border-color: #04bbab;
+}
+
+.container{
+	margin-top: 40px;
+}
+.technologyContent,.degreeContent{
+	margin-top: 30px;
+}
+.technologyContent p{
+	margin: 0;
+	margin-bottom: 35px;
+}
+.degreeContent p{
+	margin: 0;
+	margin-bottom: 5px;
+}
+.progress{
+	margin:0;
+	height: 17px;
+	margin-bottom: 7px;
+}

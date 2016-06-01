@@ -1,0 +1,33 @@
+/* 样式选择面板相关css */
+    #divStyle {
+        width: 260px;
+        height: 140px;
+        border: solid 1px gray;
+        display:block;
+        margin: 2px; 0px;
+    }
+    #divStyle ul{
+        list-style-type: none;
+        padding: 2px 2px;
+        margin: 2px 2px
+    }
+    #divStyle ul li a{
+        cursor: pointer;
+        margin: 2px 2px;
+        width: 34px;
+        height: 34px;
+        display: inline-block;
+        border: solid 1px #ffffff;
+        text-align: center;
+    }
+
+    #divStyle ul li a:hover{
+        background:none;
+        border: solid 1px gray;
+    }
+    #divStyle ul li img{
+        border: none;
+        background:url('../image/marker/icon.gif');
+    }
+
+    /* infowindow相关css */
