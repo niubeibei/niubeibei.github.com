@@ -72,3 +72,7 @@ h3{
 	height: 17px;
 	margin-bottom: 7px;
 }
+.ionicDiv,.angularJsDiv,.nodeJSDiv{
+	border: 1px solid #CCCCCC;
+	border-radius: 5px;
+}
