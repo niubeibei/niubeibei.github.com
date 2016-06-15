@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
@@ -9,6 +9,8 @@
 		<link rel="stylesheet" href="css/index.css" />
 	</head>
 	<body>
+		<div id="goTopBtn" style="background: url(img/goTopBottom.png);
+	background-position: 0px 0px;display: none;"></div>
 		<header>
 			<div class="jumbotron">
 	            <div class="userMessageDiv">
@@ -22,7 +24,7 @@
 	            	时间：2016-05-31
 	            	描述：
 	            <img src="img/jumbotron.jpg" class="jumbotronImg"/>-->
-	            <div class="toBottomDiv"><a type="button" href="#contact" class="btn btn-success toBottom"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a></div>
+	            <div class="toBottomDiv"><a type="button" href="#map" class="btn btn-success toBottom"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a></div>
 	        </div>
         </header>
         <div class="container">
@@ -109,40 +111,25 @@
         		</div>
         	</div>
         	<hr style="border-bottom: 0;margin-top: 40px;">
+        	<h3 style="margin-top: 30px;margin-bottom: 15px;" class="text-muted">作品集</h3>
+        	<div class="row" >
+        		<div class="col-xs-12 col-sm-4 col-md-4"><a href="#">作品一</a></div>
+        		<div class="col-xs-12 col-sm-4 col-md-4"><a href="#">作品二</a></div>
+        		<div class="col-xs-12 col-sm-4 col-md-4"><a href="#">作品三</a></div>
+        	</div>
+        	<hr style="border-bottom: 0;margin-top: 40px;">
         	<h3 style="margin-top: 30px;margin-bottom: 15px;" class="text-muted">我的位置</h3>
         	<div class="map" id="map" style="width: 100%;height: 300px;"></div>
         </div>
 		<script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
 		<script type="text/javascript" src="js/bootstrap.js" ></script>
+		<script type="text/javascript" src="js/rotate.js"></script>
+	    <script type="text/javascript" src="js/index.js"></script>
 		<!--引用百度地图-->
         <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.4"></script>
         <script type="text/javascript" src="baiduMap/js/baiduMap/BMapwindowinfo.js" ></script>
         <script type="text/javascript" src="baiduMap/js/baiduMap/GeoUtils_min.js" ></script>
         <!--标记-->
         <script type="text/javascript" src="http://api.map.baidu.com/library/MarkerTool/1.2/src/MarkerTool_min.js"></script>
-	    <script type="text/javascript" src="js/rotate.js" ></script>
-	    <script type="text/javascript">
-	    	 var map = new BMap.Map("map");//在container容器中创建一个地图,参数container为div的id属性;
-            var point = new BMap.Point(116.300195, 40.025952);//定位
-            //map.centerAndZoom('北京');//根据参数定义显示城市
-            map.addControl(new BMap.NavigationControl());//缩放地图的控件，默认在左上角；
-            map.addControl(new BMap.MapTypeControl());//地图类型控件，默认在右上方
-            map.addControl(new BMap.ScaleControl());//地图显示比例的控件，默认在左下方；
-            map.addControl(new BMap.OverviewMapControl());//地图的缩略图的控件，默认在右下方
-            var marker = new BMap.Marker(point);  // 创建标注
-			map.addOverlay(marker);              // 将标注添加到地图中
-			map.centerAndZoom(point, 17);//将point移到浏览器中心，并且地图大小调整为15;
-			var opts = {
-			  width : 200,     // 信息窗口宽度
-			  height: 100,     // 信息窗口高度
-			  title : "厢黄旗" , // 信息窗口标题
-			  enableMessage:true,//设置允许信息窗发送短息
-			  message:"我的地址噢~"
-			}
-			var infoWindow = new BMap.InfoWindow("地址：北京市海淀区厢黄旗", opts);  // 创建信息窗口对象 
-			marker.addEventListener("click", function(){          
-				map.openInfoWindow(infoWindow,point); //开启信息窗口
-			});
-	    </script>
 	</body>
 </html>

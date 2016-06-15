@@ -1,4 +1,4 @@
-html{
+﻿html{
 	font-size: 62.5%;
 }
 body{
@@ -75,4 +75,17 @@ h3{
 .ionicDiv,.angularJsDiv,.nodeJSDiv{
 	border: 1px solid #CCCCCC;
 	border-radius: 5px;
+}
+#goTopBtn {
+	POSITION: fixed;
+	TEXT-ALIGN: center;
+	LINE-HEIGHT: 35px;
+	WIDTH: 35px;
+	BOTTOM: 35px;
+	HEIGHT: 35px;
+	FONT-SIZE: 12px;
+	CURSOR: pointer;
+	RIGHT: 20px;
+	_position: absolute;/*只有IE6能识别, IE6不支持fixed*/
+	_right: auto;
 }
